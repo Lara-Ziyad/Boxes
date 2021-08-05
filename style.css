@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+
+}
+body {
+ background-color: rgb(251, 253, 238);
+  font-family: 'Roboto', sans-serif;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /*the scroll bars won't show by defultd*/
+  }
+
+h1 {
+  margin 10px;
+  color: rgb(141, 184, 197);
+}
+h2 {
+  color: beige;
+}
+
+.box {
+  background-color:darkcyan;
+  color#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px  rgb(53, 37, 17,03);
+  transform: translateX(200%); /*to spacific a postion for object in the screen */
+  transition: transform 2s ease ;/*to movve object in the screen */
+}
+.box:nth-of-type(even){
+
+  transform: translateX(-200%);
+
+}
+.box.show {
+  transform: translateX(0);
+
+}
